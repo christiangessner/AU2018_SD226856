@@ -119,8 +119,7 @@ namespace SD226856.RdlcFileBomExplorerExtension
             {
                 var fieldNames = reportManager.Fields.Select(f => f.DataField).ToArray();
 
-                var propDefInfos = wsm.PropertyService.GetPropertyDefinitionInfosByEntityClassId("FILE", null);
-                var propDefs = propDefInfos.Select(p => p.PropDef).ToArray();
+                var propDefs = wsm.PropertyService.GetPropertyDefinitionsByEntityClassId("FILE");
                 var propDefIds = new List<long>();
 
                 #region Create Table and Columns
