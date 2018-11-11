@@ -44,7 +44,7 @@ namespace SD226856.PowerBIReportsExplorerExtension
 
         public IEnumerable<DetailPaneTab> DetailTabs()
         {
-            var extensionPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            var extensionPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (extensionPath == null)
                 return null;
 
@@ -95,7 +95,7 @@ namespace SD226856.PowerBIReportsExplorerExtension
 
         public void OnLogOn(IApplication application)
         {
-            var extensionPath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            var extensionPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (extensionPath == null)
                 return;
 

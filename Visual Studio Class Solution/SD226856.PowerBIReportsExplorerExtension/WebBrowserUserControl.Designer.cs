@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.WebBrowserControl = new System.Windows.Forms.WebBrowser();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.SuspendLayout();
             // 
             // WebBrowserControl
@@ -55,6 +54,5 @@
         #endregion
 
         private System.Windows.Forms.WebBrowser WebBrowserControl;
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
